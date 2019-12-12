@@ -1,0 +1,14 @@
+.has-bg-img {
+    background: url('/assets/img/job.png')center center;
+    background-size: cover;
+}
+
+.notification {
+    opacity: 1;
+    transition: opacity 0.6s; /* 600ms to fade out */
+}
+
+.has-bg-img-index {
+    background: url('/assets/img/SplitShire-03692-1800x1200.jpg')center center;
+    background-size: cover;
+}

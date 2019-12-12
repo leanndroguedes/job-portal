@@ -1,0 +1,28 @@
+Options -Indexes
+RewriteEngine on
+RewriteRule ^login(|/)$ login.php
+RewriteRule ^signup(|/)$ signup.php
+RewriteRule ^logout(|/)$ logout.php
+RewriteRule ^success(|/)$ success.php
+RewriteRule ^account(|/)$ account-redirect.php
+RewriteRule ^account/overview(|/)$ overview.php
+RewriteRule ^account/profile(|/)$ profile.php
+RewriteRule ^account/notifications(|/)$ notifications.php
+RewriteRule ^account/privacy(|/)$ privacy.php
+RewriteRule ^account/subscription/receipt(|/)$ receipt.php
+RewriteRule ^account/subscription/receipt/(.*)$ receipt.php?receiptid=$1
+RewriteRule ^account/change-password(|/)$ change-password.php
+RewriteRule ^account/apps(|/)$ apps.php
+RewriteRule ^account/apps/new(|/)$ new.php
+RewriteRule ^account/apps/change/(.*)$ change-job.php?appid=$1
+RewriteRule ^account/apps/revoke/(.*)$ apps.php?appid=$1
+RewriteRule ^password-reset(|/)$ password-reset.php
+RewriteRule ^password-reset/change/(.*)$ password-reset.php?_token=$1
+RewriteRule ^search-jobs(|/)$ search-jobs.php
+RewriteRule ^saved-jobs(|/)$ saved-jobs.php
+RewriteRule ^job-categories(|/)$ job-categories.php
+RewriteRule ^job/(.*)$ job.php?jobid=$1
+RewriteRule ^faq(|/)$ faq.php
+RewriteRule ^about-us/contact(|/)$ about-us.php
+RewriteRule ^legal/end-user-agreement(|/)$ end-user-agreement.php
+RewriteRule ^statistics(|/)$ statistics.php
